@@ -6,10 +6,83 @@
     <Name>CubosOlabProyectoFinal.database</Name>
     <FullPath>CubosOlabProyectoFinal.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Cubo_Soporte_Calidad_NW.cube</Name>
+      <FullPath>Cubo_Soporte_Calidad_NW.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Cubo_Soporte_Calidad_NW.partitions</Name>
+          <FullPath>Cubo_Soporte_Calidad_NW.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Tipo Servicio.dim</Name>
+      <FullPath>Dim Tipo Servicio.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Producto.dim</Name>
+      <FullPath>Dim Producto.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Region.dim</Name>
+      <FullPath>Dim Region.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Cliente.dim</Name>
+      <FullPath>Dim Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Prioridad.dim</Name>
+      <FullPath>Dim Prioridad.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Tiempo.dim</Name>
+      <FullPath>Dim Tiempo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Empleado.dim</Name>
+      <FullPath>Dim Empleado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Soporte.dim</Name>
+      <FullPath>Fact Soporte.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>conexionDW_Final.ds</Name>
+      <FullPath>conexionDW_Final.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Vistas_NW_Cubo_Soporte_Calidad.dsv</Name>
+      <FullPath>Vistas_NW_Cubo_Soporte_Calidad.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>conexionDW_Final</Id>
+            <Name>conexionDW_Final</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=FERNANDO;Integrated Security=SSPI;Initial Catalog=DW_TecnoPC_Security</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>conexionDW_Final</Id>
+            <Name>conexionDW_Final</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
