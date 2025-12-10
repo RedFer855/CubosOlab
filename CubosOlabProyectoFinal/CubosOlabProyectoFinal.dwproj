@@ -17,6 +17,16 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>AbadCubo5.cube</Name>
+      <FullPath>AbadCubo5.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>AbadCubo5.partitions</Name>
+          <FullPath>AbadCubo5.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -51,17 +61,41 @@
       <Name>Fact Soporte.dim</Name>
       <FullPath>Fact Soporte.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Proveedor.dim</Name>
+      <FullPath>Dim Proveedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Tiempo 1.dim</Name>
+      <FullPath>Dim Tiempo 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Producto 1.dim</Name>
+      <FullPath>Dim Producto 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Compras.dim</Name>
+      <FullPath>Fact Compras.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>conexionDW_Final.ds</Name>
       <FullPath>conexionDW_Final.ds</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>AbadCubo.ds</Name>
+      <FullPath>AbadCubo.ds</FullPath>
+    </ProjectItem>
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
       <Name>Vistas_NW_Cubo_Soporte_Calidad.dsv</Name>
       <FullPath>Vistas_NW_Cubo_Soporte_Calidad.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AbadCubo5.dsv</Name>
+      <FullPath>AbadCubo5.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -74,11 +108,21 @@
             <Name>conexionDW_Final</Name>
             <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=FERNANDO;Integrated Security=SSPI;Initial Catalog=DW_TecnoPC_Security</Value>
           </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>AbadCubo</Id>
+            <Name>AbadCubo</Name>
+            <Value xsi:type="xsd:string">Provider=MSOLEDBSQL.1;Data Source=DESKTOP-20M1LAJ\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=DW_TecnoPC_Security</Value>
+          </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>conexionDW_Final</Id>
             <Name>conexionDW_Final</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>AbadCubo</Id>
+            <Name>AbadCubo</Name>
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
