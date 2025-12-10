@@ -1,0 +1,20 @@
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Build folders
+bin/
+obj/
+
+# SSAS / SSDT auxiliary files
+*.bak
+*.backup
+*.deploymentoptions
+*.deploymenttargets
+*.dwproj.user
+
+# Temp / cache / logs
+*.log
+*.tmp
+*.cache
