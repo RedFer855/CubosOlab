@@ -17,6 +17,16 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>AbadCubo5.cube</Name>
+      <FullPath>AbadCubo5.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>AbadCubo5.partitions</Name>
+          <FullPath>AbadCubo5.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -51,6 +61,22 @@
       <Name>Dim Producto.dim</Name>
       <FullPath>Dim Producto.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Empleado 1.dim</Name>
+      <FullPath>Dim Empleado 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Tipo Contrato 1.dim</Name>
+      <FullPath>Dim Tipo Contrato 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Categoria 1.dim</Name>
+      <FullPath>Dim Categoria 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Marca 1.dim</Name>
+      <FullPath>Dim Marca 1.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -58,14 +84,18 @@
       <FullPath>conexionDW_Final.ds</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>AbadCubo.ds</Name>
-      <FullPath>AbadCubo.ds</FullPath>
+      <Name>Abad.ds</Name>
+      <FullPath>Abad.ds</FullPath>
     </ProjectItem>
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
       <Name>DW Tecno PC Security.dsv</Name>
       <FullPath>DW Tecno PC Security.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AbadCubo5.dsv</Name>
+      <FullPath>AbadCubo5.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -79,8 +109,8 @@
             <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=FERNANDO;Password=;User ID=;Initial Catalog=DW_TecnoPC_Security</Value>
           </ConfigurationSetting>
           <ConfigurationSetting>
-            <Id>AbadCubo</Id>
-            <Name>AbadCubo</Name>
+            <Id>DW Tecno PC Security</Id>
+            <Name>DW Tecno PC Security</Name>
             <Value xsi:type="xsd:string">Provider=MSOLEDBSQL.1;Data Source=DESKTOP-20M1LAJ\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=DW_TecnoPC_Security</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
@@ -91,8 +121,8 @@
             <Value xsi:type="xsd:int">1</Value>
           </ConfigurationSetting>
           <ConfigurationSetting>
-            <Id>AbadCubo</Id>
-            <Name>AbadCubo</Name>
+            <Id>DW Tecno PC Security</Id>
+            <Name>DW Tecno PC Security</Name>
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
