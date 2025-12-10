@@ -6,6 +6,52 @@
     <Name>CubosOlabProyectoFinal.database</Name>
     <FullPath>CubosOlabProyectoFinal.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>DW Tecno PC Security_Ventas.cube</Name>
+      <FullPath>DW Tecno PC Security_Ventas.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>DW Tecno PC Security_Ventas.partitions</Name>
+          <FullPath>DW Tecno PC Security_Ventas.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Cliente.dim</Name>
+      <FullPath>Dim Cliente.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Marca.dim</Name>
+      <FullPath>Dim Marca.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Categoria.dim</Name>
+      <FullPath>Dim Categoria.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Canal Venta.dim</Name>
+      <FullPath>Dim Canal Venta.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Tipo Contrato.dim</Name>
+      <FullPath>Dim Tipo Contrato.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Empleado.dim</Name>
+      <FullPath>Dim Empleado.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Tiempo.dim</Name>
+      <FullPath>Dim Tiempo.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Producto.dim</Name>
+      <FullPath>Dim Producto.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>conexionDW_Final.ds</Name>
@@ -16,6 +62,12 @@
       <FullPath>AbadCubo.ds</FullPath>
     </ProjectItem>
   </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>DW Tecno PC Security.dsv</Name>
+      <FullPath>DW Tecno PC Security.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
@@ -24,7 +76,7 @@
           <ConfigurationSetting>
             <Id>conexionDW_Final</Id>
             <Name>conexionDW_Final</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=FERNANDO;Integrated Security=SSPI;Initial Catalog=DW_TecnoPC_Security</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=FERNANDO;Password=;User ID=;Initial Catalog=DW_TecnoPC_Security</Value>
           </ConfigurationSetting>
           <ConfigurationSetting>
             <Id>AbadCubo</Id>
@@ -36,7 +88,7 @@
           <ConfigurationSetting>
             <Id>conexionDW_Final</Id>
             <Name>conexionDW_Final</Name>
-            <Value xsi:type="xsd:int">0</Value>
+            <Value xsi:type="xsd:int">1</Value>
           </ConfigurationSetting>
           <ConfigurationSetting>
             <Id>AbadCubo</Id>
